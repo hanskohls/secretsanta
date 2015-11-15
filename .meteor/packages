@@ -18,3 +18,10 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
+coffeescript
+mquandalle:jade
+aldeed:simple-schema
+aldeed:autoform
+accounts-password
+accounts-base
+ejson

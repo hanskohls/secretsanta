@@ -1,0 +1,7 @@
+template(name="user")
+  unless currentUser
+    +signup
+    +signin
+  else
+    +signout
+
