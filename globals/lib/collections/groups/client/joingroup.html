@@ -1,0 +1,24 @@
+<template name="joingroup">
+  <h2>Join Group</h2>
+  <form id="formJoinGroup">
+    <fieldset id="fsSelectGroup">
+      <label for="groupSelect">Select a Group</label>
+      <select id="groupSelect">
+        {{#each groups}}
+          {{>groupoption}}
+        {{/each}}
+      </select>
+    </fieldset>
+    <fieldset>
+      <label for="inputGroupPassword">Provide the Group's Password:</label>
+      <input id="inputGroupPassword" type="text" placeholder="Please type the group's password"/>
+    </fieldset>
+    <button type="submit">
+       Join Group
+    </button>
+  </form>
+</template>
+
+<template name="groupoption">
+  <option value="{{name}}">{{name}}</option>
+</template>

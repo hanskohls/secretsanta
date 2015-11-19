@@ -1,2 +1,2 @@
-Meteor.publish "groups_pub", ->
-  Groups.find({})
+Meteor.publish "groups", ->
+  Groups.find()
