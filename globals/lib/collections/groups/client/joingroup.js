@@ -16,7 +16,7 @@ Template.joingroup.onCreated(function () {
   };
   
   instance.matchGroup = function(name, password){
-    Groups.findOne({name: name, password: password});
+    return Groups.findOne({name: name, password: password});
   };
 
 });
